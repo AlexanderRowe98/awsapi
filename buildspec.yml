@@ -2,13 +2,13 @@ version: 0.2
 phases:
   pre_build:
     commands:
-      - dotnet restore ./AWSCodePipelineDemo/AWSCodePipelineDemo.csproj
+      - dotnet restore AwsCodePipelineDemo/AwsCodePipelineDemo.csproj
   build:
     commands:
-      - dotnet build ./AWSCodePipelineDemo/AWSCodePipelineDemo.csproj
+      - dotnet build AwsCodePipelineDemo/AwsCodePipelineDemo.csproj
   post_build:
     commands:
-      - dotnet publish -c Release -o ./app/ AWSCodePipelineDemo/AWSCodePipelineDemo.csproj
+      - dotnet publish -c Release -o ./app/ AwsCodePipelineDemo/AwsCodePipelineDemo.csproj
 artifacts:
   files:
     - '**/*'
